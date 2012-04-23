@@ -26,7 +26,7 @@ def non_summed(l)
     end
   end
   r = []
-  o.each_with_index{|t, i| r << i unless t}
+  o[0..l].each_with_index{|t, i| r << i unless t}
   r.inject{|a, b| a + b}
 end
 
